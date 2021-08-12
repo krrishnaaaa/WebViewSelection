@@ -3,8 +3,6 @@ package com.cse.webviewtextselection.custom_view;
 import android.content.Context;
 import android.graphics.Rect;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Gravity;
@@ -13,6 +11,9 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.PopupWindow;
 import android.widget.Toast;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.cse.webviewtextselection.R;
 import com.cse.webviewtextselection.webviewmaker.TextSelectionSupport;
@@ -25,7 +26,7 @@ public class CustomWebView extends WebView {
 
     private final String TAG = this.getClass().getSimpleName();
 
-    private Context mContext;
+    private final Context mContext;
 
     private TextSelectionSupport mTextSelectionSupport;
 
